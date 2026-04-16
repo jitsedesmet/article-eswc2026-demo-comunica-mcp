@@ -35,3 +35,16 @@ it requires the LLM agent to explicitly include `SERVICE` keywords within the qu
 while Comunica enables automatic source selection.
 Furthermore, all advanced features from Comunica are exposed through MCP,
 such as HTTP proxy support, timeout settings, and authentication (e.g for updates).
+
+Below, we list the tools that Comunica MCP SPARQL exposes to LLMs,
+together with their LLM-directed descriptions and (a subset of) the available parameters:
+
+- `query-sparql`: Execute SPARQL queries over one or more remote sources, which also includes update queries.
+    - `query` (required): SPARQL query string.
+    - `sources` (required): List of SPARQL endpoint URLs, TPF interface URLs, or Lin
+    - `httpProxy` (optional): HTTP proxy URL (e.g., http://proxy.example.com:8080).
+    - `httpAuth` (optional): HTTP basic authentication in the format username:password.
+- `query-sparql-rdf`: Execute SPARQL queries over a serialized RDF dataset provided as a string.
+    - `query` (required): SPARQL query string.
+    - `value` (required): Serialized RDF dataset as a string.
+    - `mediaType` (required): Media type of the serialized RDF dataset.
