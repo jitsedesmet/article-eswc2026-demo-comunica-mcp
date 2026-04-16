@@ -19,7 +19,7 @@ Our preliminary findings show that modern LLMs can effectively query over well k
 but can struggle when querying other Knowledge Graphs,
 or try to write federated queries.
 <!-- Conclusion   -->
-In conclusion, Comunica MCP SPARQL is a tool that offers a path towards trustworthy and explainable AI,
+In conclusion, Comunica MCP SPARQL is a tool that offers a path towards trustworthy and explainable agentic AI,
 <!-- Perspectives -->
 and enables future research towards neuro-symbolic AI by integrating LLMs and Knowledge Graphs.
 
