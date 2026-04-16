@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "comunica-sparql": {
+      "command": "npx",
+      "args": [ "-y", "@comunica/mcp-sparql", "--mode" "stdio" ]
+    }
+  }
+}

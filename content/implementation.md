@@ -7,10 +7,18 @@ Comunica is a modular SPARQL framwork that enables SPARQL querying over decentra
 This includes Knowledge Graphs exposed as [SPARQL endpoints](cite:cites spec:sparqlprot),
 [Linked Data documents](cite:cites linkeddata) in any RDF representation, [TPF interfaces](cite:cites tpf), [HDT files](cite:cites hdt), [Solid pods](cite:cites solid), and more.
 In contrast to GRASP, Comunica MCP SPARQL is exposed through the more flexible MCP instead of using direct function calling.
+MCP is very simple to setup, as it only requires a minimal configuration change within LLM agents, as can be seen in [](#mcp-config).
 Furthermore, besides allowing the LLM agent to execute any possible SPARQL 1.2 query,
 Comunica MCP SPARQL allows agents to provide one or more Knowledge Graph URLs to query over.
 And if the AI agent does not know what URLs to start from,
 [link traversal](cite:cites linktraversalfoundations,solidquery) can be used to discover relevant sources by following links.
+
+<figure id="mcp-config" class="listing">
+````/code/mcp-config.txt````
+<figcaption markdown="block">
+An example of the only configuration change needed to configure Comunica MCP SPARQL within tools such as Claude or Copilot.
+</figcaption>
+</figure>
 
 Comunica MCP SPARQL is not the first MCP approach for SPARQL, but it has some notable differences to existing work.
 Some SPARQL engine vendors have their own dedicated MCP servers, such as
